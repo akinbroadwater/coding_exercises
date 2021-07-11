@@ -1,0 +1,19 @@
+
+#include <iostream>
+ // this code uses the size integer  and  sizeof command
+int main()
+{
+    unsigned short x{ 0 }; 
+    std::cout << "here, type in any negative number from -1 - -255.\n>>> ";
+    std::cin >> x;
+    std::cout << "im going to print it out. You'd think that it would return what you typed in, but it will actually be ";
+    std::cout << x;
+    std::cout << ".\nthis is because of how c++ works.\n\n\n\n";
+    std::cout << "also, i want to use the sizeof command.\n";
+    std::cout << "enter any number and i will tell you how many bytes it is: ";
+    int y{ 0 };
+    std::cin >> y;
+    std::cout << "\n the number you entered, " << y << " is " << sizeof(y) << " bytes.";
+    return 0;
+    
+}
