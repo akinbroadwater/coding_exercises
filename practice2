@@ -1,0 +1,21 @@
+#include <iomanip>
+#include <string>
+#include <iostream>
+
+
+int main()
+{
+    std::cout << "enter name :    ";
+    std::string name{};
+    std::cin >> name;
+    
+    int numofcharinname = name.length();
+    std::cout << "\nnow enter your age:    ";
+    int age{ 0 };
+    std::cin >> age;
+    int agedivname = age / numofcharinname;
+    
+    double stringagedivname = static_cast<double>(agedivname);
+    std::cout << "for each lettter of your name, you've lived " << stringagedivname << " years.";
+    return 0;
+}
